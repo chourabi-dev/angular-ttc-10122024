@@ -14,3 +14,6 @@
 
 7 - create our first componenet:
     ng g c comp_name
+
+8 - create a new angular pipe
+    ng g c pipe_name
