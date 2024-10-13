@@ -1,0 +1,24 @@
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Stock</th>
+            <th>Name</th>
+            <th>Price</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of productsDATA" >
+            <td>{{p.id}}</td>
+            <td>
+
+                <span  *ngIf=" p.quantity == 0 "  class="text-danger">out of stock</span>
+                <span  *ngIf=" p.quantity != 0 ">{{p.quantity}}</span>
+
+            </td>
+            <td>{{p.name}}</td>
+            <td>{{p.price}}</td>
+        </tr>
+    </tbody>
+</table>
