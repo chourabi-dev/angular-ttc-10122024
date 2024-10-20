@@ -1,0 +1,17 @@
+<app-navbar></app-navbar>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12 mb-3 col-sm-4" *ngFor="let t of teams">
+            <div class="card">
+                <div class="card-body">
+                    <h3>{{ t.name }}</h3>
+                    <p class="text-muted">
+                        {{ t.description }}
+                    </p>
+                    <a [routerLink]=" '/team/details/'+t.id  ">voir plus</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
