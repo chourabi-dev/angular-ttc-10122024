@@ -1,0 +1,28 @@
+<app-navbar></app-navbar>
+
+
+<div class="container mt-5">
+    <h1>Products list</h1>
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Code</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- data -->
+             <tr *ngFor="let p of list" >
+                <td>{{p.name}}</td>
+                <td>{{p.price}}</td>
+                <td>{{p.quantity}}</td>
+                <td>{{p.code}}</td>
+
+             </tr>
+        </tbody>
+    </table>
+</div>
